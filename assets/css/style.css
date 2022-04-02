@@ -1,22 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--deeppink);
 }
 
 
 :root{
     --silverpink: #c4aead;
-    --darkcyan: #008b8b;
+    --slategray: #778899;
     --gainesboro: #dcdcdc;
+    --deeppink: #ff1493;
      }
 
 /* Header styles */
 
 header { 
-    color: var(--darkcyan);
-    background-color: var(--silverpink);
+    background-image: url("../images/universe.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 33%;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -27,7 +30,9 @@ header {
 } 
 
 header h1 {
-    font-size: 50px;
+    font-size: 60px;
+    margin-left: 15px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, .5);
 }
 
  /* Navigation styles */
@@ -42,10 +47,10 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: var(--darkcyan);
     text-decoration: none;
     font-size: 25px;
     margin-right: 50px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1)
 }
 /* end header styles */
 
@@ -53,48 +58,236 @@ header nav ul li a {
 
 .hero {
     height: 200px;
-    width: 100%;
     padding:25px;
     background-image: url("../images/universe.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 33%;
+    background-attachment: fixed;
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 .hero h2 {
-    color: var(--gainesboro);    
+    color: var(--silverpink); 
+    font-size: 35px;   
 }
 /* End hero styles */
 
-.about {
+/*Content styles */
+
+.content {
     background-color: var(--silverpink);
+
+}
+.content h2 {
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
+    font-size: 35px;
+}
+
+.content h3 {
+    text-shadow: 5px 5px rgba(0, 0, 0, 20%);
+}
+
+.hero, .about, .works, .resume {
+    border-bottom: var(--gainesboro) solid 10px;
+}
+
+/*End content Styles */
+
+/*about ME STYLES!!!!!! */
+
+.about {
     display:flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 .about h2 {
-    margin:20px 20px 0px 0px;
-    color: var(--darkcyan);
-    font-size: 30px;
+    margin:0px 100px 0px 15px;
+    margin-right:100px;
     
 }
+/* pic of me */
 .about img {
-    margin:100px;
+    margin:100px 40px 100px 40px;
     width: 25%;
     display: flex;
     position:relative;
+    border: var(--slategray) 5px solid;
+    border-radius: 15px;
+    box-shadow: var(--gainesboro) 3px 3px;
 }
 
 .about p{
     margin-right: 150px;
-    font-size: 20px;
-    color: var(--darkcyan)
+    font-size: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
+    width: 50%;
+
 }
 
+/* MY WORKS */
 
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.works h2 {
+     font-size: 35px;
+     color: var(--deeppink);
+     margin:100px 50px
+}
+
+.works h3 {
+    color: var(--gainesboro);
+    font-size: 20px;
+}
+.work1 {
+    display:flex;
+}
+.runbuddy {
+    height: 300px;
+    border: var(--slategray) solid 5px;
+    border-radius: 15px;
+    margin: 0px 50px;
+    box-shadow: var(--gainesboro) 3px 3px;
+    margin: 50px;   
+}
+
+ .horiseon, .flowers, .beautiful {
+     height: 200px; 
+     border: var(--slategray) solid 5px;
+     border-radius: 15px;
+     margin: 50px;
+     box-shadow: var(--gainesboro) 3px 3px;
+ }
+
+ .resume {
+     display: flex;
+     margin: 50px 25px;
+     padding-bottom: 25px;
+ }
+
+.resume h2 {
+    width:20%
+}
+
+.resume2 {
+    height: 300px;
+    border: var(--slategray);
+    box-shadow: var(--gainesboro) 3px 3px;
+    border-radius: 15px;
+    width:80%
+}
 
     
-    
+ /*Footer styles*/
+
+footer {
+    background-image: url("../images/universe.jpg");
+    background-size: cover;
+    background-position: 33%;
+    background-attachment: fixed;
+    color: var(--deeppink);
+    font-size: 15px;
+    text-align: right;
+
+}
+
+/* Media query styles */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;    
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }   
+}
+@media screen and (max-width :768px) {
+    .content {
+        padding: 30px 15px;
+        flex: 1 100%;
+        text-align: center;
+        } 
+        
+        .about {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap ;
+        }
+
+
+        .works {
+        flex: 100%;
+        text-align: center;
+        justify-content: center;
+        }
+
+    }
+    @media screen and (max-width: 575px) {
+        .about {
+            display:flex
+        }
+
+        .about h2 {
+            margin: auto;
+        }
+            
+        .andrea {
+            margin: auto;
+        }
+
+        .runbuddy {
+            height: 100px
+        }
+
+        .horiseon, .flowers, .beautiful{
+            height: 100px
+            }
+        }
+
+        .resume {
+        flex-wrap:wrap;
+        justify-content: center;
+        }
+
+        .resume h2 {
+            text-align: center;
+            margin: 0px 60px 25px 0px
+        }
+        .resume2 {
+            width: 50%;
+            margin: 20px
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin: 25px
+        }
+        
