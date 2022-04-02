@@ -86,7 +86,7 @@ header nav ul li a {
 }
 
 .content h3 {
-    text-shadow: 5px 5px rgba(0, 0, 0, 20%);
+    text-shadow: 2px 2px rgba(0, 0, 0, 10%);
 }
 
 .hero, .about, .works, .resume {
@@ -128,7 +128,8 @@ header nav ul li a {
 /* MY WORKS */
 
 .works {
-    display: flex;
+    padding: 50px 20px;
+    display:flex;
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: center;
@@ -138,16 +139,16 @@ header nav ul li a {
 .works h2 {
      font-size: 35px;
      color: var(--deeppink);
-     margin:100px 50px
+     padding: 0px 40px;
+     margin:0px 1050px 40px 5px;
+
 }
 
 .works h3 {
-    color: var(--gainesboro);
+    color: var(--slategray);
     font-size: 20px;
 }
-.work1 {
-    display:flex;
-}
+
 .runbuddy {
     height: 300px;
     border: var(--slategray) solid 5px;
@@ -164,6 +165,7 @@ header nav ul li a {
      margin: 50px;
      box-shadow: var(--gainesboro) 3px 3px;
  }
+ /*Resume styles */
 
  .resume {
      display: flex;
@@ -177,13 +179,29 @@ header nav ul li a {
 
 .resume2 {
     height: 300px;
-    border: var(--slategray);
+    border: var(--slategray) solid 5px;
     box-shadow: var(--gainesboro) 3px 3px;
     border-radius: 15px;
-    width:80%
+    margin-left: 200px;
+    width:80%;
+}
+ /*Contact styles*/
+
+.contact {
+    margin: 0px 20px;
+    padding: 5px;
 }
 
-    
+.contact h2 {
+    margin-bottom: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 25px;
+    margin:0px 30px 20px 20px;
+    padding:20px;
+}
  /*Footer styles*/
 
 footer {
@@ -194,6 +212,7 @@ footer {
     color: var(--deeppink);
     font-size: 15px;
     text-align: right;
+    margin:20px
 
 }
 
@@ -203,7 +222,7 @@ footer {
     header {
         padding-bottom: 0;
         justify-content: center;
-        position: relative;
+    
     }
 
     header h1 {
@@ -230,7 +249,18 @@ footer {
     header, .hero, .content, .about h2, .about p {
         width: 100%;
         }
-        
+
+    header {
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+        padding: 20px 10px;
+}
     .hero {
         height: 150px;
         justify-content: space-evenly;
@@ -238,7 +268,7 @@ footer {
         }
 
     .content {
-        padding: 30px 15px;
+        padding: 25px;
         text-align: center;
         } 
 
@@ -247,12 +277,6 @@ footer {
         margin-top: 15px;
         margin-bottom: 15px;
         flex-wrap: wrap ;
-        }
-
-    .works {
-        flex: 100%;
-        text-align: center;
-        justify-content: center;
         }
 
     .about h2 {
@@ -264,35 +288,45 @@ footer {
         margin: 50px 40px 40px;
     }
 
-        .about p {
-            margin: 40px 15px;
-        }
+    .about p {
+        margin: 40px 15px;
+    }
+        
+    .works {
+        flex: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .runbuddy {
+        height: 100px
+    }
 
-        .runbuddy {
-            height: 100px
-        }
+    .horiseon, .flowers, .beautiful{
+        height: 100px
+   }
 
-        .horiseon, .flowers, .beautiful{
-            height: 100px
-            }
-        }
-
-        .resume {
+    .resume {
         flex-wrap:wrap;
         justify-content: center;
-        }
+    }
 
-        .resume h2 {
-            text-align: center;
-            margin: 0px 60px 25px 0px
-        }
-        .resume2 {
-            width: 50%;
-            margin: 20px
-        }
+    .resume h2 {
+        text-align: center;
+        margin: 0px 60px 25px 0px
+    }
+    .resume2 {
+        width: 50%;
+        margin: 20px
+    }
 
-        .contact h2 {
-            text-align: center;
-            margin: 25px
-        }
-        
+    .contact h2 {
+        text-align: center;
+        margin: 25px
+    }
+
+    footer {
+        padding: 25px;
+        width: 100%;
+    }
+}
