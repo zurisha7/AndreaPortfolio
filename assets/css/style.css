@@ -150,8 +150,9 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.musitory {
-    height: 300px;
+.meetFriends {
+    height: 500px;
+    width: 300px;
     border: var(--slategray) solid 5px;
     border-radius: 15px;
     margin: 0px 50px;
@@ -159,7 +160,7 @@ header nav ul li a {
     margin: 50px;   
 }
 
- .horiseon, .runbuddy, .beautiful {
+ .horiseon, .runbuddy, .musitory {
      height: 200px; 
      border: var(--slategray) solid 5px;
      border-radius: 15px;
